@@ -14,7 +14,7 @@ html, body{
   background: -webkit-linear-gradient(left, #a445b2, #fa4299);
 }
 
-.wrapper{
+.limg{
     width: 1170px;
     margin: auto;
 }
@@ -34,6 +34,7 @@ html, body{
   color: #fff;
 }
 .wrapper{
+  display: block;
   overflow: hidden;
   max-width: 390px;
   background: #fff;
@@ -43,6 +44,7 @@ html, body{
 }
 .wrapper .title-text{
   display: flex;
+  margin: auto;
   width: 200%;
 }
 .wrapper .title{
