@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2B2C2E;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    /* Hide horizontal scrollbar */
+    overflow-x: hidden; 
+}
+
+/* header */
+.header{
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* called to all subjects and ordered them in a row*/
+.row-subjects {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+  }
+
+
+/* created four equal columns that sits next to each other */
+.column {
+    width: 310px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    object-fit: cover;
+
+  }
+
+  .column img {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* added a responsive layout - makes two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+/* fixed the responsive layout - now the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
