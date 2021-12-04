@@ -70,8 +70,11 @@ body {
 }
 
 .column a:hover + .desc {
-    outline: 2px solid red;
     visibility: visible;
+}
+
+.desc{
+  color: #fff;
 }
 
 /* added a responsive layout - makes two column-layout instead of four columns */
