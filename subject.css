@@ -21,6 +21,20 @@ body {
     color: #ffffff;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  border: 5px solid #283a4d;
+  box-shadow: inset 0 0 15px #283a4d;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#eecda3, #ef629f);
+  border-radius: 50px;
+}
+
 /* called to all subjects and ordered them in a row*/
 .row-subjects {
     margin: 5px;
